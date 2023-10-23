@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@poc/Useless-lib": {
+    "Useless-lib": {
       "projectType": "library",
-      "root": "projects/poc/useless-lib",
-      "sourceRoot": "projects/poc/useless-lib/src",
+      "root": "projects/useless-lib",
+      "sourceRoot": "projects/useless-lib/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/poc/useless-lib/ng-package.json"
+            "project": "projects/useless-lib/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/poc/useless-lib/tsconfig.lib.prod.json"
+              "tsConfig": "projects/useless-lib/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/poc/useless-lib/tsconfig.lib.json"
+              "tsConfig": "projects/useless-lib/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/poc/useless-lib/tsconfig.spec.json",
+            "tsConfig": "projects/useless-lib/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
